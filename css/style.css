@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody&family=Genos:ital,wght@0,200;0,400;1,600&family=Texturina:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000000;
+  min-height: 65px;
+}
+
+.navbar-brand img {
+  width: 50px;
+  object-fit: cover;
+}
+
+.nav-item {
+  gap: 5px;
+}
+
+.nav-link {
+  color: #880f0f;
+  font-size: 24px;
+  text-align: center;
+  border: 3px solid #ffffff;
+  padding: 5px;
+  background-color: aqua;
+}
+
+footer {
+  background-color: #100f0f;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #eeeeee;
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-contacto {
+  background-image: url("../assets/images/NuevaYork/NY9-min.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  min-height: 430px;
+}
+.main-contacto section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+
+.form div {
+  gap: 10px;
+  background-color: #eeeeee;
+  padding: 8px;
+}
+
+.form input {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+}
+
+.input-fijo {
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.about, .experiencia, .educacion {
+  display: flex;
+  width: 100%;
+  background-color: #718c76;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.sobre-mi, .experiencia-lista, .educacion-lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sobre-mi img, .experiencia-lista img, .educacion-lista img {
+  width: 40%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.sobre-mi div, .experiencia-lista div, .educacion-lista div {
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+  align-items: center;
+}
+
+.sobre-mi div h2, .experiencia-lista div h2, .educacion-lista div h2 {
+  text-align: center;
+  color: #000000;
+  font-size: 20px;
+}
+
+.sobre-mi div p {
+  text-align: left;
+  color: #2d2a2a;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.experiencia-lista div ul, .educacion-lista div ul {
+  text-align: left;
+  margin: 20px;
+}
+
+.experiencia-lista div ul li, .educacion-lista div ul li {
+  list-style-type: square;
+  color: #2d2a2a;
+  font-size: 20px;
+}
+
+.title-galeria {
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+.title-galeria h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-self: center;
+  justify-self: center;
+  padding: 10px;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  height: 800px;
+  width: 100%;
+}
+
+.port {
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+.port h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.grilla-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: auto;
+  grid-template-areas: "area1 area2 area3" "area4 none area5";
+  background-color: #777b9f;
+  align-content: center;
+  width: 100%;
+}
+.grilla-logos__grilla-logo {
+  padding: 5px;
+  gap: 20px;
+  width: 100%;
+}
+.grilla-logos__grilla-logo img {
+  height: 550px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.l1 {
+  grid-area: area1;
+}
+
+.p1 {
+  grid-area: area1;
+}
+
+.f1 {
+  grid-area: area1;
+}
+
+.l2 {
+  grid-area: area2;
+}
+
+.p2 {
+  grid-area: area2;
+}
+
+.f2 {
+  grid-area: area2;
+}
+
+.l3 {
+  grid-area: area3;
+}
+
+.p3 {
+  grid-area: area3;
+}
+
+.f3 {
+  grid-area: area3;
+}
+
+.l4 {
+  grid-area: area4;
+}
+
+.p4 {
+  grid-area: area4;
+}
+
+.l5 {
+  grid-area: area5;
+}
+
+.p5 {
+  grid-area: area5;
+}
+
+.p6 {
+  grid-area: area6;
+}
+
+.p7 {
+  grid-area: area7;
+}
+
+.p8 {
+  grid-area: area8;
+}
+
+.grilla-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: auto;
+  grid-template-areas: "area1 area2 area3" "area4 area5 area6" "area7 none area8";
+  background-color: #55e8c4;
+  align-content: center;
+}
+.grilla-productos__grilla-producto {
+  padding: 15px;
+  gap: 10px;
+}
+.grilla-productos__grilla-producto img {
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.grilla-films {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: auto;
+  grid-template-areas: "area1 area2 area3";
+  background-color: #48cc51;
+  align-content: center;
+}
+.grilla-films__grilla-film {
+  padding: 15px;
+  gap: 10px;
+}
+.grilla-films__grilla-film img {
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.caja-inicio {
+  background-color: #718c76;
+  text-align: center;
+  width: 100%;
+}
+.caja-inicio__cajita {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+}
+.caja-inicio__cajita video {
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  margin: 10px;
+}
+.caja-inicio__cajita div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px;
+}
+.caja-inicio__cajita div h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #070606;
+  font-weight: bold;
+}
+.caja-inicio__cajita div a {
+  color: #880f0f;
+  border: 2px solid #000000;
+  padding: 10px;
+  align-self: flex-end;
+}
+
+.cards {
+  background-color: #3874ad;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.cards__card-body {
+  width: 25%;
+  background-color: #bd3e3e;
+  padding: 10px;
+  margin: 10px;
+}
+.cards__card-body img {
+  width: 100%;
+  height: 150;
+  object-fit: cover;
+}
+.cards__card-body h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.colaboraciones {
+  background-color: #dcdde3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.colaboraciones__samsung {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  gap: 20px;
+}
+.colaboraciones__samsung div {
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+.colaboraciones__samsung div h2 a {
+  color: #5963cc;
+  text-decoration: none;
+}
+.colaboraciones__samsung img {
+  align-items: center;
+  width: 50%;
+  height: fit-content;
+  object-fit: cover;
+}
+.colaboraciones__samsung video {
+  width: 60%;
+  height: 800px;
+}
+
+@media screen and (max-width: 550px) {
+  .cajita {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards__card-body {
+    width: 100%;
+    background-color: #bd3e3e;
+    padding: 10px;
+    margin: 10px;
+  }
+  .colaboraciones__samsung video {
+    width: 70%;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about, .experiencia, .educacion {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    background-color: #718c76;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .sobre-mi, .experiencia-lista, .educacion-lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+  }
+  .sobre-mi img, .experiencia-lista img, .educacion-lista img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .sobre-mi div, .experiencia-lista div, .educacion-lista div {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1195px) {
+  .grilla-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+  .grilla-logos__grilla-logo {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+  }
+  .grilla-logos__grilla-logo img {
+    height: 550px;
+    object-fit: contain;
+    width: 100%;
+  }
+  .grilla-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+  .grilla-productos__grilla-producto {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    width: 100%;
+  }
+  .grilla-productos__grilla-producto img {
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    object-fit: contain;
+    width: 100%;
+  }
+  .grilla-films {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+  .grilla-films__grilla-film {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+  .grilla-films__grilla-film img {
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    object-fit: contain;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .samsung video {
+    width: 70%;
+    height: 500px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

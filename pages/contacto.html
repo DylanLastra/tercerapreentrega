@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Producciones</title>
+    <!--link a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <!--link css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images/PRODUCCIONES-min.png" type="image/x-icon">
+</head>
+<body>
+        <!--header-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/images/PRODUCCIONES-min.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Focus Producciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item"><a href="../index.html"class="nav-link active" aria-current="page">INICIO</a></li>
+                    <li class="nav-item"><a href="galeria.html"class="nav-link">GALERIA</a></li>
+                    <li class="nav-item"><a href="portafolio.html"class="nav-link">PORTAFOLIO</a></li>
+                    <li class="nav-item"><a href="experiencia.html"class="nav-link">EXPERIENCIA</a></li>
+                    <li class="nav-item"><a href="contacto.html"class="nav-link">CONTACTO</a></li>
+                  </div>
+                </div>
+              </div>
+          </nav>
+    </header>
+        <!--main-->
+    <main class="main-contacto">
+        <section>
+        <form class="form">
+            <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+            </div>
+
+            <div>
+            <label for="nombre">Apellido:</label>
+            <input type="text" name="apellido" placeholder="Escriba su apellido" required>
+            </div>
+
+            <div>
+            <label for="email">Email:</label>
+            <input type="email"  name="email" placeholder="Escriba su email" required>
+            </div>
+
+            <div>
+            <label>Tipo de evento:</label>
+            <select name="evento">
+                <option value="Cumpleaños">Cumpleaños</option>
+                <option value="Concierto">Concierto</option>
+                <option value="Logo">Logo</option>
+                <option value="Video">Video</option>
+                <option value="Otros">Otros</option>
+            </select>
+            </div>
+
+            <div>
+            <label for="mensaje">Mensaje:</label>
+            <input type="text" class="input-fijo" placeholder="Mensaje" required>
+
+            <div>
+            <input type="submit" value="Enviar">
+            
+            <input type="reset" value="Limpiar">
+            </div>
+        </form>
+    </section>
+    </main>
+    <!--footer-->
+    <footer class="footer-contacto">
+        <p>Derechos reservados por Dylan Lastra</p>
+    </footer>
+
+    <!--script bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

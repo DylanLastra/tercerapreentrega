@@ -1,0 +1,47 @@
+.about,.experiencia, .educacion{
+    display: flex;
+    width: 100%;
+    background-color:#718c76;
+    text-align: center;
+    justify-content: space-between;
+    }
+    .sobre-mi,.experiencia-lista,.educacion-lista  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        gap:20px
+    }
+    .sobre-mi img, .experiencia-lista img, .educacion-lista img {
+        width: 40%;
+        height: 500px;
+        object-fit: cover;
+    }    
+    .sobre-mi div,.experiencia-lista div, .educacion-lista div{
+        flex-direction: column;
+        width: 40%;
+        text-align: center;
+        align-items: center;
+    }
+    .sobre-mi div h2, .experiencia-lista div h2, .educacion-lista div h2{
+        text-align: center;
+        color: #000000;
+        font-size: 20px;
+    }
+    .sobre-mi div p{
+        text-align: left;
+        color: #2d2a2a;
+        font-size: 20px;
+        margin: 5px;
+    }
+    .experiencia-lista div ul, .educacion-lista div ul {
+        text-align: left;
+        margin: 20px;
+    }
+    .experiencia-lista div ul li, .educacion-lista div ul li {
+        list-style-type:square;
+        color: #2d2a2a;
+        font-size: 20px;
+    }
+        

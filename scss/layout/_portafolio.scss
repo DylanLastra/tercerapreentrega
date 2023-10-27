@@ -1,0 +1,132 @@
+.port{
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    h2{
+        text-align: center;
+        padding: 10px;
+        font-size: 28px;
+        font-weight:bold;
+    }
+}
+.grilla-logos{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'area1 area2 area3'
+    'area4 none area5';
+    background-color: #777b9f;
+    align-content: center;
+    width: 100%;
+
+    &__grilla-logo{
+        padding: 5px;
+        gap: 20px;
+        width: 100%;
+        img{
+            height: 550px;
+            object-fit: contain;
+            width: 100%;
+        }
+        
+    }
+    
+}
+.l1{
+    grid-area: area1;
+}
+.p1{
+    grid-area: area1;
+}
+.f1{
+    grid-area: area1;
+}
+.l2{
+    grid-area: area2;
+}
+.p2{
+    grid-area: area2;
+}
+.f2{
+    grid-area: area2;
+}
+.l3{
+    grid-area: area3;
+}
+.p3{
+    grid-area: area3;
+}
+.f3{
+    grid-area: area3;
+}
+.l4{
+    grid-area: area4;
+}
+.p4{
+    grid-area: area4;
+}
+.l5{
+    grid-area: area5;
+}
+.p5{
+    grid-area: area5;
+}
+.p6{
+    grid-area: area6
+}
+.p7{
+    grid-area: area7
+}
+.p8{
+    grid-area: area8
+}
+.grilla-productos{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'area1 area2 area3'
+    'area4 area5 area6'
+    'area7 none area8'
+    ;
+    background-color: #55e8c4;
+    align-content: center;
+
+    &__grilla-producto{
+        padding: 15px;
+        gap: 10px;
+        img{
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+    }
+}
+.grilla-films{
+    display: grid;
+        grid-template-columns: repeat(3,2fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'area1 area2 area3';
+        background-color: #48cc51;
+        align-content: center;
+
+        &__grilla-film{
+            padding: 15px;
+            gap: 10px;
+            img {
+                align-items: center;
+                justify-content: center;
+                height: 800px;
+                object-fit: cover;
+                width: 100%;
+            
+            }
+        }
+        
+    }
+    

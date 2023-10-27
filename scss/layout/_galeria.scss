@@ -1,0 +1,32 @@
+.title-galeria{
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    h2{
+        text-align: center;
+        padding: 10px;
+        font-size: 40px;
+        font-weight:bold;
+    }
+    
+}
+.carousel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-inner{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+.carousel-item img{
+    object-fit: contain;
+    height: 800px;
+    width: 100%;
+}
